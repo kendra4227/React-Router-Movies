@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import {Route} from 'react-router-dom';
+import {Route} from 'react-dom';
 import MovieList from "./Movies/MovieList";
-import Movie from "./Movies/Movie";
 
 import SavedList from './Movies/SavedList';
 
@@ -35,8 +34,7 @@ export default function App () {
 
       <Route exact path = "/" component = 
       {MovieList}/>
-      <Route path = "/movies/:id" component = {Movie}/>
-        
+      <Route path = "/movies/${:id}"></Route>
         
     </div>
   );
