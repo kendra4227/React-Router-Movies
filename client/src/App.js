@@ -36,7 +36,7 @@ export default function App () {
       <SavedList list={[ /* This is stretch */]} />
 
       <Route exact path="/" render={(props) => <MovieList {...props} movies={movieList} />} />
-      <Route path = "/movies/${:id}"  component = {Movie}/>
+      <Route path = "/movies/:id" component = {Movie}/>
         
     </div>
   );
